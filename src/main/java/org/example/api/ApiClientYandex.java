@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 
 public class ApiClientYandex implements ApiClient {
     private final HttpClient httpClient = HttpClient.newHttpClient();
+
     @Override
     public String get(String url) {
         try {

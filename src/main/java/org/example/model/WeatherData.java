@@ -1,6 +1,8 @@
 package org.example.model;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class WeatherData {
     @JsonProperty("temp")
@@ -25,6 +27,11 @@ public class WeatherData {
 
     public void setTemperature(double temperature) {
         this.temperature = temperature;
+    }
+
+    @Override
+    public String toString() {
+        return "";
     }
 }
 
